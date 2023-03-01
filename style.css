@@ -1,0 +1,495 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f1f3f6;
+}
+
+/*--Hearder Section Start--*/
+.header {
+    height: 56px;
+    background-color: #2874f0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo {
+    display: block;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.logo img {
+    height: 1.257rem;
+    width: 4.688rem;
+    display: block;
+}
+
+.logo a {
+    display: block;
+    text-decoration: none;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bolder;
+    color: #f0f0f0;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+
+}
+
+.logo a::after {
+    width: 0.625rem;
+    height: 0.625rem;
+    background-image: url("images/header/plus.png");
+    background-size: 0.625rem 0.625rem;
+    display: inline-block;
+    content: "";
+}
+
+.plus-logo {
+    color: #ffe500;
+    font-weight: bolder;
+    margin-right: 2px;
+}
+
+.search {
+    display: flex;
+    margin: 10px;
+
+}
+.search:focus-within .RecentSearch {
+    display: block;
+}
+.search button {
+    background-color: #ffffff;
+    border: none;
+    width: 42px;
+    height: 36px;
+    padding: 4px 12px 0 8px;
+    cursor: pointer;
+    border-radius: 0px 2px 2px 0px;
+    outline: none;
+
+}
+
+.search input {
+
+    height: 36px;
+    width: 476px;
+    border: none;
+    padding: 0px 16px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 2px 0px 0px 2px;
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.07), -7px -7px 10px rgba(0, 0, 0, 0.07);
+}
+
+button:focus {
+    outline: none;
+}
+
+.RecentSearch {
+    display: none;
+    position: absolute;
+    top: 46px;
+    background-color: white;
+    padding: 8px 16px;
+    width: 518px;
+    height: 360px;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2),
+        5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #ccc;
+    z-index: 2;
+
+}
+
+.RecentSearch-List {
+    display: flex;
+    font-size: 15px;
+
+
+}
+
+.RecentSearch-List i {
+    color: rgb(121, 115, 115);
+    font-size: 18px;
+}
+
+.RecentSearch-List p {
+    padding-left: 15px;
+    margin-top: -3px;
+}
+
+.DiscoverMore {
+    padding-left: 16px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: rgb(121, 115, 115);
+    margin-top: -3px;
+}
+
+.loginBtn {
+    color: #2874f0;
+    background-color: #ffffff;
+    padding: 0px 40px;
+    outline: none;
+    height: 31px;
+    margin-left: 150px;
+    margin-top:13px;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    cursor: pointer;
+    text-align: center;
+}
+.loginBtn:hover .HoverLogin {
+    display: flex;
+}
+
+
+
+.HoverLogin {
+    position: absolute;
+    top: 61px;
+    height: 385px;
+    width: 250px;
+    background-color: #ffffff;
+    margin-left: -100px;
+    margin-top: -5px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2),
+        5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 8px 10px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.triangle-up-login {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid #ffffff;
+    top: -20px;
+
+}
+.triangle-up-login:hover .HoverLogin {
+    display: flex;
+}
+
+.Newuser {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.Newuser a {
+    color: #2874f0;
+}
+
+.loginMenu {
+    width: 250px;
+
+}
+
+.menuList {
+    padding-left: 10px;
+    display: flex;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menuList p {
+    margin-top: -3px;
+    padding-left: 10px;
+}
+
+.menuList i {
+    color: #2874f0;
+}
+
+.menuList:hover {
+    background-color: #f0f0f0;
+}
+
+.Navlink {
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-top: 20px;
+    margin-left: 40px;
+
+}
+
+.Navlink:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Navlink img {
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+.HoverMore {
+    position: absolute;
+    top: 61px;
+    height: 220px;
+    width: 250px;
+    background-color: #ffffff;
+    margin-left: -100px;
+    margin-top: -5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2),
+        5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 8px 10px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+
+.triangle-up-more {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid #ffffff;
+    top: -20px;
+}
+
+.moreMenu {
+    width: 250px;
+}
+
+.moreList {
+    margin-top: -15px;
+    padding-left: 10px;
+    padding-top: 15px;
+    display: flex;
+
+}
+
+.moreList:hover {
+    background-color: #f0f0f0;
+}
+
+.moreList p {
+    margin-top: -3px;
+    padding-left: 10px;
+}
+
+.moreList i {
+    color: #2874f0;
+}
+
+.angledownIcon:hover .down {
+    transition: 0.1s;
+    transform: rotate(-180deg);
+    color: #ffffff;
+}
+
+.angledownIcon:hover .HoverMore {
+    display: flex;
+}
+
+/*--Navbar --*/
+nav {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    background-color: #ffffff;
+}
+
+.nav-item {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 35px
+}
+
+.nav-item:hover .item-name a {
+    color: #2874f0;
+
+}
+
+.nav-item:hover .item-name i {
+    transition: 0.1s;
+    transform: rotate(-180deg);
+}
+
+.nav-item img {
+    width: 64px;
+    height: 64px;
+}
+
+.item-name a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/*--Section 1 Start --*/
+.section-1 {
+    z-index: 1;
+    background-color: #ffffff;
+    margin-top: 10px;
+    text-align: center;
+    height: 270px;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.1),
+        5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding-right:0 ;
+    padding-left:0; 
+    position: relative;   
+    
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+}
+
+.dealoftheday {
+    display: flex;
+    padding-top: 10px;
+}
+
+.dealoftheday i {
+    margin: 8px;
+}
+
+.dealoftheday p {
+    margin-left: 5px;
+    margin-top: 5px;
+    color: rgb(131, 130, 130);
+}
+
+.scrollbar{
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+
+
+}
+
+.card-layout {
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-layout:hover img {
+    transform: scale(102%);
+}
+
+.card-layout img {
+    height: 42%;
+    width: 150px;
+    padding: 10px;
+}
+
+.card-layout .card-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-layout .price {
+    margin-top: -5px;
+    color: #388e3c;
+    font-size: 16px;
+}
+
+.card-layout .brand {
+    font-size: 14px;
+    margin-top: -12px;
+    color: rgb(131, 130, 130);
+}
+
+.banner {
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+    margin-left: 3px;
+    
+}
+
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    height: 270px;
+    border: 3px solid white;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.1),
+        5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel_btn {
+    position:absolute;
+    top: 35%;
+    right: 0%;
+    box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 30%);
+    background-color: hsla(0, 0%, 100%, 0.98);
+    cursor: pointer;
+    padding: 30px 12px;
+    border-radius: 4px 0 0 4px;
+}
+
+/*--Section 2--*/
+
+.section-2 {
+    z-index: 1;
+    background-color: #ffffff;
+    margin-top: 10px;
+    text-align: center;
+    height: 270px;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.1),
+        5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section-2-subheading p {
+    text-align: start;
+    margin-top: -8px;
+    color: rgb(139, 132, 132);
+    font-size: 14px;
+    height: 8px;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1350px;
+    }
+}
